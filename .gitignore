@@ -1,0 +1,30 @@
+
+# macOS system files
+.DS_Store
+
+# Debug symbols
+*.dSYM/
+
+# Compiled object files
+*.o
+
+# Temporary files
+*.tmp
+
+# Known compiled executables
+/Arithmetic
+/armstrong
+/bubble_sort
+/factorial
+/fibonacci
+/gcd
+/hello
+/macro
+/sum_series
+/series
+/test
+/test1
+/test3
+/electricity
+/matrix
+

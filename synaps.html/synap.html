@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FormFlow | Human-Friendly Forms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">F</div>
+
+            <div>
+                <h1>FormFlow</h1>
+                <p>Human-friendly digital forms</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span></span>
+            Demo Mode
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="tag">
+                    PS05 • THE HUMAN–MACHINE GAP
+                </span>
+
+                <h2>
+                    Complete difficult forms
+                    <span>by simply talking.</span>
+                </h2>
+
+                <p>
+                    FormFlow helps people understand complicated digital
+                    forms using simple language and voice interaction.
+                </p>
+
+            </div>
+
+            <button class="primary-btn" id="startBtn">
+                Start Form →
+            </button>
+
+        </section>
+
+
+        <!-- ================= WORKSPACE ================= -->
+
+        <section class="workspace">
+
+
+            <!-- FORM -->
+
+            <div class="card form-card">
+
+                <div class="form-header">
+
+                    <div>
+                        <small>SCHOLARSHIP APPLICATION</small>
+                        <h3>Student Details</h3>
+                    </div>
+
+                    <div class="progress-text" id="progressText">
+                        1 / 5
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRESS -->
+
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+
+                <form id="form">
+
+
+                    <!-- NAME -->
+
+                    <div class="field">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                        >
+
+                        <small>
+                            Enter your name as written on your official document.
+                        </small>
+
+                    </div>
+
+
+                    <!-- INCOME -->
+
+                    <div class="field">
+
+                        <label for="income">
+                            Annual Family Income
+                        </label>
+
+                        <input
+                            type="number"
+                            id="income"
+                            placeholder="Example: 300000"
+                        >
+
+                        <small>
+                            Enter the total family income for one year.
+                        </small>
+
+                    </div>
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="field">
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="">
+                                Select category
+                            </option>
+
+                            <option value="General">
+                                General
+                            </option>
+
+                            <option value="OBC">
+                                OBC
+                            </option>
+
+                            <option value="SC">
+                                SC
+                            </option>
+
+                            <option value="ST">
+                                ST
+                            </option>
+
+                            <option value="EWS">
+                                EWS
+                            </option>
+
+                        </select>
+
+                        <small>
+                            Select the category mentioned in your certificate.
+                        </small>
+
+                    </div>
+
+
+                    <!-- INSTITUTION -->
+
+                    <div class="field">
+
+                        <label for="college">
+                            Institution Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="college"
+                            placeholder="Enter college name"
+                        >
+
+                        <small>
+                            Enter your current college or institution.
+                        </small>
+
+                    </div>
+
+
+                    <!-- COURSE -->
+
+                    <div class="field">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+                        <input
+                            type="text"
+                            id="course"
+                            placeholder="Example: B.Tech Computer Science"
+                        >
+
+                        <small>
+                            Enter your current course or programme.
+                        </small>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-buttons">
+
+                        <button
+                            type="button"
+                            class="secondary-btn"
+                            id="previousBtn"
+                        >
+                            ← Previous
+                        </button>
+
+                        <button
+                            type="button"
+                            class="primary-btn"
+                            id="nextBtn"
+                        >
+                            Continue →
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+
+            <!-- ================= AI ASSISTANT ================= -->
+
+            <div class="card assistant-card">
+
+                <div class="assistant-header">
+
+                    <div class="bot">
+                        ✦
+                    </div>
+
+                    <div>
+
+                        <small>FORMFLOW ASSISTANT</small>
+
+                        <h3>
+                            How can I help?
+                        </h3>
+
+                    </div>
+
+                    <div class="online">
+                        Online
+                    </div>
+
+                </div>
+
+
+                <!-- CHAT -->
+
+                <div
+                    class="chat"
+                    id="chat"
+                >
+
+                    <div class="message ai">
+
+                        <strong>
+                            FormFlow
+                        </strong>
+
+                        <p>
+                            Hello! I can explain the current field,
+                            listen to your answer and guide you through
+                            the form.
+                        </p>
+
+                    </div>
+
+                    <div class="message user">
+
+                        <p>
+                            “Ye field kya pooch raha hai?”
+                        </p>
+
+                    </div>
+
+                    <div class="message ai">
+
+                        <strong>
+                            FormFlow
+                        </strong>
+
+                        <p>
+                            Ask me about any field or use the microphone.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SUGGESTIONS -->
+
+                <div class="suggestions">
+
+                    <button
+                        class="suggestion"
+                        id="explainBtn"
+                    >
+                        Explain this field
+                    </button>
+
+                    <button
+                        class="suggestion"
+                        id="hindiBtn"
+                    >
+                        Explain in Hindi
+                    </button>
+
+                </div>
+
+
+                <!-- VOICE -->
+
+                <div class="voice-box">
+
+                    <button
+                        class="mic"
+                        id="micBtn"
+                    >
+                        🎙️
+                    </button>
+
+                    <div>
+
+                        <strong id="voiceStatus">
+                            Tap to speak
+                        </strong>
+
+                        <p id="voiceHint">
+                            Example: “Ye field kya pooch raha hai?”
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONFIRMATION -->
+
+                <div
+                    class="confirmation hidden"
+                    id="confirmation"
+                >
+
+                    <p id="confirmationText"></p>
+
+                    <div>
+
+                        <button
+                            class="secondary-btn"
+                            id="cancelBtn"
+                        >
+                            Cancel
+                        </button>
+
+                        <button
+                            class="primary-btn"
+                            id="confirmBtn"
+                        >
+                            Confirm
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRIVACY -->
+
+        <section class="privacy">
+
+            🔒
+
+            <div>
+
+                <strong>
+                    Demo Safety
+                </strong>
+
+                <p>
+                    This prototype does not submit information
+                    to a real scholarship portal.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOAST -->
+
+    <div
+        id="toast"
+        class="toast"
+    ></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
